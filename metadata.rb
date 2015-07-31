@@ -4,7 +4,7 @@ maintainer_email 'adrien.brault@gmail.com'
 license          'MIT'
 description      'ElasticSearch OpsWorks'
 long_description 'ElasticSearch OpsWorks'
-version          '0.1.0'
+version          '0.2.0'
 
 depends 'elasticsearch'
 depends 'java'
