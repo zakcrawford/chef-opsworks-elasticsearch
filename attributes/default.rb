@@ -1,8 +1,8 @@
 set[:java][:install_flavor] = 'openjdk'
 set[:java][:jdk_version] = '7'
 
-set[:elasticsearch][:version] = '1.2.2'
-set[:elasticsearch][:filename] = "elasticsearch-1.2.2.tar.gz"
+set[:elasticsearch][:version] = '1.7.1'
+set[:elasticsearch][:filename] = "elasticsearch-1.7.1.tar.gz"
 set[:elasticsearch][:download_url] = [
     node[:elasticsearch][:host],
     node[:elasticsearch][:repository],
@@ -13,7 +13,7 @@ set[:elasticsearch][:cluster][:name] = 'logstash'
 
 set[:elasticsearch][:plugins]['karmi/elasticsearch-paramedic'] = {}
 set[:elasticsearch][:plugins]['royrusso/elasticsearch-HQ'] = {}
-set[:elasticsearch][:plugins]['elasticsearch/elasticsearch-cloud-aws']['version'] = '2.2.0'
+set[:elasticsearch][:plugins]['elasticsearch/elasticsearch-cloud-aws']['version'] = '2.7.0'
 
 set[:elasticsearch][:discovery][:type] = 'ec2'
 set[:elasticsearch][:discovery][:zen][:ping][:multicast][:enabled] = false
